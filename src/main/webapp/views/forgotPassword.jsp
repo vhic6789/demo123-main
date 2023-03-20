@@ -8,6 +8,6 @@
 <title>quên mật khẩu</title>
 </head>
 <body>
-<p>xin vui lòng liên hệ <a href="https://www.facebook.com/thaithinhpk188">fb:thaithinhpk188</a></p>
+<p>Xin vui lòng liên hệ <a href="https://www.facebook.com/deovantoi94">fb:Văn Tới</a></p>
 </body>
 </html>

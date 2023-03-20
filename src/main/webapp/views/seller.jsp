@@ -41,7 +41,7 @@
 				</div>
 
 				<br>
-				<div>Phí: 5000đ</div>
+				<div>Phí: 0đ</div>
 				<br>
 
 				<div class="d-inline-flex">

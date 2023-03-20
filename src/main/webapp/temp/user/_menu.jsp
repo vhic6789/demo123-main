@@ -34,7 +34,7 @@
 	<div class="container">
 
 		<nav class="navbar navbar-expand-lg navbar-light bg-white">
-			<a class="navbar-brand" href="#">CAR DEALER</a>
+			<a class="navbar-brand" href="#">HỖ TRỢ HỌC TẬP</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -50,8 +50,8 @@
 						role="button" data-toggle="dropdown" aria-haspopup="true"
 						aria-expanded="false"> Tạo giao dịch </a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="/user/seller">Bán</a> <a
-								class="dropdown-item" href="/user/buyer">Mua</a>
+							<a class="dropdown-item" href="/user/seller">Làm bài</a> <a
+								class="dropdown-item" href="/user/buyer">Thuê bài</a>
 						</div></li>
 
 					<li class="nav-item"><a class="nav-link" href="/user/thongbao">Thông

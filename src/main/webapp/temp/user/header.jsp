@@ -33,7 +33,7 @@
 	<div class="container">
 
 		<nav class="navbar navbar-expand-lg navbar-light bg-white">
-			<a class="navbar-brand" href="#">CAR DEALER</a>
+			<a class="navbar-brand" href="#">HỖ TRỢ HỌC TẬP</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -49,8 +49,8 @@
 						role="button" data-toggle="dropdown" aria-haspopup="true"
 						aria-expanded="false"> Tạo giao dịch </a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="/user/seller">Bán</a> <a
-								class="dropdown-item" href="/user/buyer">Mua</a>
+							<a class="dropdown-item" href="/user/seller">Làm bài</a> <a
+								class="dropdown-item" href="/user/buyer">Thuê bài</a>
 						</div></li>
 
 
@@ -175,8 +175,7 @@
 										aria-label="Password" aria-describedby="basic-addon2">
 								</div>
 
-								<p class="text-danger">* số điện thoại nên trùng với tài khoản
-									momo</p>
+								
 								<label class="sr-only" for="">Phonenumber</label>
 								<div class="input-group mb-2">
 									<div class="input-group-prepend">

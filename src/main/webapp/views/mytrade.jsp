@@ -38,11 +38,11 @@
 								<td>${mytrade.getTieude() }</td>
 							</tr>
 							<tr>
-								<td>Người mua</td>
+								<td>Người thuê</td>
 								<td>${mytrade.getNguoimua() }</td>
 							</tr>
 							<tr>
-								<td>Người bán</td>
+								<td>Người làm</td>
 								<td>${mytrade.getNguoiban() }</td>
 							</tr>
 							<tr>
@@ -84,24 +84,25 @@
 				<div class="card" id="msgWindow">
 					<div class="d-flex font-weight-bold"
 						style="background: Gainsboro; font-size: 12px;">
-						<div class="p-2 flex-fill">Người mua:
+						<div class="p-2 flex-fill">Người thuê:
 							${mytrade.getTrangthaimua() }</div>
 						<div class="p-2 flex-fill text-center">${mytrade.getSophutconlai() }
 							phút</div>
-						<div class="p-2 flex-fill text-right">${mytrade.getTrangthaiban() }
-							:Người bán</div>
+						<div class="p-2 flex-fill text-right">Người làm:
+							${mytrade.getTrangthaiban() }
+							</div>
 					</div>
 
 					<div class="card-body" id="msgs"
 						style="height: 300px; overflow: scroll;">
 						<div class="msg to">
-							<span class='text-danger font-weight-bold'>admin</span>:Giao dịch
-							chưa bắt đầu <br> Người mua chuyển ${mytrade.getTongtien() } kèm nội dung ${mytrade.getMagiaodich() }
-							tới tài khoản Momo: ${chuyenkhoan }
-							<p>Người mua: <span class='text-success font-weight-bold'>${mytrade.getNguoimua() }</span></p>
-							<p>Người bán: <span class='text-success font-weight-bold'>${mytrade.getNguoiban() }</span></p>
-							<p>Momo người bán: <span class='font-weight-bold'>**********</span></p>
-							<p>Ngân Hàng người bán: <span class='font-weight-bold'>**********</span></p>
+							<p style="font-size: 75%;"><span class='text-danger font-weight-bold'>admin</span>:Giao dịch
+							chưa bắt đầu <br> Người thuê chuyển ${mytrade.getTongtien() } kèm nội dung ${mytrade.getMagiaodich() }
+							tới : ${chuyenkhoan }
+							<br>Người thuê: <span class='text-success font-weight-bold'>${mytrade.getNguoimua() }</span>
+							<br>Người làm: <span class='text-success font-weight-bold'>${mytrade.getNguoiban() }</span>
+							<br>Ngân hàng người thuê: <span class='font-weight-bold'>**********</span>
+							Ngân hàng người làm: <span class='font-weight-bold'>**********</span></p>
 						</div>
 						<c:if test="${empty message }">
 							<div class="msg to">

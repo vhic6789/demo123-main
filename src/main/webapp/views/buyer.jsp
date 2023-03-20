@@ -20,7 +20,7 @@
 		<div class="border-right">
 			<div class="p-3 py-5">
 				<div class="d-flex justify-content-between align-items-center mb-3">
-					<h4 class="text-right">Chủ đề mua</h4>
+					<h4 class="text-right">Chủ đề hỗ trợ</h4>
 				</div>
 
 				<div class="">
@@ -41,7 +41,7 @@
 				</div>
 
 				<br>
-				<div>Phí: 5000đ</div>
+				<div>Phí: 0đ</div>
 				<br>
 
 				<div class="d-inline-flex">

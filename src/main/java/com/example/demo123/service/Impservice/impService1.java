@@ -333,7 +333,7 @@ public class impService1 implements service1 {
 						user = Ruser.findByUsernameLike(createby);
 						Long createid = user.getId();
 
-						int fee = 5000; // final
+						int fee = 0; // final
 						int statussell = 0;
 						int statusbuy = 0;
 						LocalDate datenow = LocalDate.now();

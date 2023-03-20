@@ -4,7 +4,7 @@
 <!-- Footer -->
 <footer class="page-footer font-small">
 	<div class="footer-copyright text-center py-3">
-		© 2015 Support: <a href="mailto:avukim1397@gmail.com"> avukim1397@gmail.com</a>
+		© 2015 Support: <a href="mailto:"></a>
 	</div>
 </footer>
 <!-- Footer -->
