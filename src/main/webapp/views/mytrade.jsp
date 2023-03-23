@@ -78,79 +78,81 @@
 
 	<c:if test="${mytrade.getStatus() == 1 }">
 
-		<div class="row">
-			<div class="col msg-window-container">
-
-				<div class="card" id="msgWindow">
-					<div class="d-flex font-weight-bold"
-						style="background: Gainsboro; font-size: 12px;">
-						<div class="p-2 flex-fill">Người thuê:
-							${mytrade.getTrangthaimua() }</div>
-						<div class="p-2 flex-fill text-center">${mytrade.getSophutconlai() }
-							phút</div>
-						<div class="p-2 flex-fill text-right">Người làm:
-							${mytrade.getTrangthaiban() }
-							</div>
-					</div>
-
-					<div class="card-body" id="msgs"
-						style="height: 300px; overflow: scroll;">
-						<div class="msg to">
-							<p style="font-size: 75%;"><span class='text-danger font-weight-bold'>admin</span>:Giao dịch
-							chưa bắt đầu <br> Người thuê chuyển ${mytrade.getTongtien() } kèm nội dung ${mytrade.getMagiaodich() }
-							tới : ${chuyenkhoan }
-							<br>Người thuê: <span class='text-success font-weight-bold'>${mytrade.getNguoimua() }</span>
-							<br>Người làm: <span class='text-success font-weight-bold'>${mytrade.getNguoiban() }</span>
-							<br>Ngân hàng người thuê: <span class='font-weight-bold'>**********</span>
-							Ngân hàng người làm: <span class='font-weight-bold'>**********</span></p>
-						</div>
-						<c:if test="${empty message }">
-							<div class="msg to">
-								<span class='text-danger font-weight-bold'>admin</span>:Giao
-								dịch bắt đầu
-							</div>
-						</c:if>
-						<c:forEach var="cmt" items="${cmts }">
-							<c:if test="${cmt.getCreateby() == mytrade.getNguoimua() }">
+		<table class="table">
+				<tbody>
+					<tr>
+						<td>${mytrade.getNguoimua() }(Người thuê)</td>
+						<td>${mytrade.getTrangthaimua()} </td>
+					</tr>
+					<tr>
+						<td>Thời gian</td>
+						<td>${mytrade.getSophutconlai() } phút</td>
+					</tr>
+					<tr>
+						<td>${mytrade.getNguoiban() }(Người làm)</td>
+						<td>${mytrade.getTrangthaiban() }</td>
+					</tr>
+					<tr>
+						<td>ADMIN</td>
+						<td>
+							<c:if test="${empty message }">
 								<div class="msg to">
-									<span class='text-success font-weight-bold'>${mytrade.getNguoimua() }</span>:
-									${cmt.getContents() }
+									Giao dịch bắt đầu
 								</div>
 							</c:if>
-							<c:if test="${cmt.getCreateby() == mytrade.getNguoiban() }">
-								<div class="msg to text-right">${cmt.getContents() }
-									:<span class='text-success font-weight-bold'>${mytrade.getNguoiban() }</span>
-								</div>
-							</c:if>
+						</td>
+					</tr>
+					<tr>
+						<td>Chuyển khoản</td>
+						<td style='color: red;'>Số tiền: ${mytrade.getTongtien() }<br> Nội dung: ${mytrade.getMagiaodich() }<br>
+							${chuyenkhoan }</td>
+					</tr>
+				</tbody>
+			</table>
+			<img src="/images/nganhang.jpg" height="350" width="300" alt="">
+						<section>
+				<button class="chat-btn">
+					<i class="material-icons"> comment </i>
+				</button>
+				<div class="chat-popup">
+					<div class="chat-area">
+						<c:forEach var="cmt" items="${cmts }">
+								<c:if test="${cmt.getCreateby() == mytrade.getNguoimua() }">
+									<div class="income-msg">
+										<img src="/images/avata.jpg" class="avatar" alt="">
+										<span class="msg">${cmt.getContents() }</span>
+									</div>
+								</c:if>
+								<c:if test="${cmt.getCreateby() == mytrade.getNguoiban() }">
+									<div class="out-msg">
+											<span class="my-msg">${cmt.getContents() }</span>
+											<img src="/images/avata.jpg" class="avatar" alt="">
+									</div>
+								</c:if>
+	
 						</c:forEach>
 					</div>
-					
-						<form id="formcmt" action="/user/mytrade" method="POST">
-							<div class="card-footer">
-								<div class="input-group" id="msgForm" data-sender="me">
-									<input name="id" value="${mytrade.getId() }" type="hidden">
-									<input name="contents" class="form-control" type="text"
-										placeholder="...message" /> <input type="hidden"
-										name="${_csrf.parameterName }" value="${_csrf.token }">
-									<div class="input-group-append">
-										<button class="btn btn-outline-secondary" type="submit">Gửi</button>
-									</div>
-								</div>
-							</div>
-							<br>
-							<div class="btn-group" style="width: 100%">
-								<button name="huygiaodich" value="-2" type="submit"
-									class="btn btn-sm btn-warning">Hủy giao dịch</button>
-								<button name="khieunai" value="-3" type="submit"
-									class="btn btn-sm btn-danger">Khiếu nại</button>
-								<button name="xacnhan" value="1" type="submit"
-									class="btn btn-sm btn-success">Xác nhận</button>
-							</div>
-						</form>
-					
+					<form id="formcmt" action="/user/mytrade" method="POST">
+						<div class="input-area">
+							<input name="id" value="${mytrade.getId() }" type="hidden">
+							<input name="contents" type="text" placeholder="...message" />
+							<input type="hidden" name="${_csrf.parameterName }" value="${_csrf.token }">
+							<button class="submit"> <i class="material-icons">send</i></button>
+						</div>
+						<br>
+						<div class="btn-group" style="width: 100%">
+
+							<button name="khieunai" value="-3" type="submit" class="btn btn-sm btn-danger">Khiếu
+								nại</button>
+							<button name="huygiaodich" value="-2" type="submit" class="btn btn-sm btn-warning">Hủy giao
+								dịch</button>
+							<button name="xacnhan" value="1" type="submit" class="btn btn-sm btn-success">Xác
+								nhận</button>
+						</div>
+					</form>
 				</div>
-			</div>
-		</div>
+			</section>
+			
 	</c:if>
 
 </div>

@@ -63,6 +63,22 @@
 		setInterval(autoGetStatus , 4000);
     </c:if>
 </script>
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
+    <script>
+	const popup = document.querySelector('.chat-popup');
+const chatBtn = document.querySelector('.chat-btn');
+
+
+
+// Emoji selection  
+     
+
+//   chat button toggler 
+
+chatBtn.addEventListener('click', ()=>{
+    popup.classList.toggle('show');
+})
+	</script>
 </body>
 
 </html>

@@ -218,7 +218,7 @@ public class MyControl {
 			model.addAttribute("error", "có lỗi xảy ra");
 		}
 		model.addAttribute("titlePage", "giao dịch của tôi");
-
+		model.addAttribute("checkcssmytrade", "/fileinclude/css/mytradecss.css");
 		return "mytrade";
 	}
 
