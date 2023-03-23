@@ -95,12 +95,12 @@
 					<tr>
 						<td>ADMIN</td>
 						<td>
-							<c:if test="${not empty message }">
+							<c:if test="${empty message }">
 								<div class="msg to">
 									Giao dịch bắt đầu
 								</div>
 							</c:if>
-							<c:if test="${empty message }">
+							<c:if test="${not empty message }">
 								<div class="msg to">
 									Giao dịch chưa bắt đầu
 								</div>
