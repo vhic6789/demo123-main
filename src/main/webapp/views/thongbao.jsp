@@ -19,7 +19,8 @@
 				<p>(3) bên thuê xác nhận</p>
 				<p>Lưu ý: bạn cần cập nhật Ngân Hàng để thanh toán</p>
 				<p>Tiền sẽ được trả qua Tài khoản Ngân Hàng</p>
-				<p>Tất cả các khiểu nại xin vui lòng liên hệ <a href="https://www.facebook.com/deovantoi94">fb:Văn Tới</a></p>
+				<p>Tất cả các khiểu nại xin vui lòng liên hệ <a href="https://www.facebook.com/deovantoi94">FB:Văn Tới</a></p>
+				<p>ZALO: 0562919519</p>
 				<br>
 			</div>
 		</div>

@@ -8,6 +8,7 @@
 <title>quên mật khẩu</title>
 </head>
 <body>
-<p>Xin vui lòng liên hệ <a href="https://www.facebook.com/deovantoi94">fb:Văn Tới</a></p>
+<p>Xin vui lòng liên hệ <a href="https://www.facebook.com/deovantoi94">FB:Văn Tới</a></p>
+<p>ZALO: 0562919519</p>
 </body>
 </html>

@@ -105,7 +105,7 @@
 								<div class="input-group mb-2">
 									<div class="form-check-inline">
 										<label class="form-check-label"> <input
-											type="checkbox" name="remember-me" class="form-check-input">Remember
+											type="hidden" name="remember-me" class="form-check-input">
 										</label>
 									</div>
 								</div>
