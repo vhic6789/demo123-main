@@ -100,11 +100,7 @@
 									Giao dịch bắt đầu
 								</div>
 							</c:if>
-							<c:if test="${not empty message }">
-								<div class="msg to">
-									Giao dịch chưa bắt đầu
-								</div>
-							</c:if>
+							
 						</td>
 					</tr>
 					<tr>
