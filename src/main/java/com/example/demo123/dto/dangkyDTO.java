@@ -90,7 +90,7 @@ public class dangkyDTO {
 	}
 	
 	public boolean kiemtra(String thamso) {
-		if(thamso.length() < 5 || thamso.length() > 12)
+		if(thamso.length() < 5 || thamso.length() > 20)
 			return false;
 		for(int i=0; i<thamso.length(); i++) {
 			if(!(thamso.charAt(i) >= 'a' && thamso.charAt(i) <='z' || thamso.charAt(i) >= '0' && thamso.charAt(i) <= '9'))
